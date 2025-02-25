@@ -27,7 +27,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const { title, image, author, publishedAt } = metadata
 
   return (
-    <section className='pb-24 pt-32'>
+    <section className='pb-24 pt-16'>
       <div className='container max-w-3xl'>
         <Link
           href='/posts'
@@ -55,7 +55,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
           </p>
         </header>
 
-        <main className='prose dark:prose-invert mt-16'>
+        <main className='prose mt-16 dark:prose-invert'>
           <MDXContent source={content} />
         </main>
 
