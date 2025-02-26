@@ -8,13 +8,16 @@ export default async function About() {
         <div className='mt-8 flex flex-row gap-8'>
           <div className='w-full sm:w-1/2'>
             <p className='pb-2'>
-              Hello! My name is Nikolas Tolvanen. I'm from Joensuu, Finland.
+              Hello! My name is Nikolas Tolvanen. I&#39;m from Joensuu, Finland.
             </p>
             <p className='py-2'>
-              I'm studying computer science at the <a href='https://www.uef.fi/en' target='_blank'><u>University of Eastern
-              Finland</u></a>. In my studies, I have learned about software development,
-              data science, data analytics, artificial intelligence, robotics,
-              and several other things.
+              I&#39;m studying computer science at the{' '}
+              <a href='https://www.uef.fi/en' target='_blank'>
+                <u>University of Eastern Finland</u>
+              </a>
+              . In my studies, I have learned about software development, data
+              science, data analytics, artificial intelligence, robotics, and
+              several other things.
             </p>
             <p className='py-2'>
               Tech has been my interest for a long time. I enjoy coding as it is
@@ -23,16 +26,17 @@ export default async function About() {
             </p>
             <p className='py-2'>
               On my free time I like going to the gym and reading interesting
-              books. I'm currently reading{' '}
+              books. I&#39;m currently reading{' '}
               <a
                 href='https://www.anupartanen.com/the-nordic-theory-of-everything/'
                 target='_blank'
               >
                 <u>
-                  "The Nordic Theory of Everything: In Search of a Better Life"
+                  &quot;The Nordic Theory of Everything: In Search of a Better
+                  Life&quot;
                 </u>
               </a>
-              . I have also started running as a new hobby this year and I'm
+              . I have also started running as a new hobby this year and I&#39;m
               hoping to run a marathon soon in the future.
             </p>
           </div>
