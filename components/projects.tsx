@@ -15,7 +15,7 @@ export default function Projects({
         <li key={project.slug} className='group relative'>
           <Link href={`/projects/${project.slug}`}>
             {project.image && (
-              <div className='h-72 w-full overflow-hidden bg-muted sm:h-60'>
+              <div className='h-72 w-full overflow-hidden bg-background sm:h-60'>
                 <Image
                   src={project.image}
                   alt={project.title || ''}

@@ -20,6 +20,7 @@ export function ThemeToggle() {
 
   return (
     <Button
+      className='rounded-border-2 rounded-lg p-2'
       size='sm'
       variant='ghost'
       onClick={() => {

@@ -1,4 +1,4 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
+//const { fontFamily } = require('tailwindcss/defaultTheme')
 import type { Config } from 'tailwindcss'
 
 const config = {
@@ -20,8 +20,10 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-sans)', ...fontFamily.sans],
-        serif: ['var(--font-serif)', ...fontFamily.serif]
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+        //sans: ['var(--font-sans)', ...fontFamily.sans],
+        //serif: ['var(--font-serif)', ...fontFamily.serif]
       },
       colors: {
         border: 'hsl(var(--border))',

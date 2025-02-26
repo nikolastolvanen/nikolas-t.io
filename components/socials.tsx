@@ -1,6 +1,6 @@
 import { JSX, SVGProps } from 'react'
 
-const navigation = [
+const links = [
   // {
   //   name: 'Facebook',
   //   href: '#',
@@ -16,7 +16,7 @@ const navigation = [
   // },
   // {
   //   name: 'Instagram',
-  //   href: '#',
+  //   href: 'https://www.instagram.com/nikolastolvanen/',
   //   icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
   //     <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
   //       <path
@@ -76,18 +76,26 @@ const navigation = [
   // }
 ]
 
-export default function Footer() {
-  return (
-    <footer className='py-8'>
-      <div className='container max-w-3xl'>
-        <div className='md:flex md:items-center md:justify-between'>
-          <div className='mt-8 md:order-1 md:mt-0'>
-            <p className='text-center text-xs leading-5 text-muted-foreground'>
-              {/* {new Date().getFullYear()} - Nikolas Tolvanen */}
-            </p>
+export default function Socials() {
+    return (
+        <div className='pt-4 pb-20'>
+          <div className='flex items-center'>
+            <div className='flex justify-center space-x-4 md:order-2'>
+              {links.map(item => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target='_blank'
+                  rel='noreferrer noopener'
+                  className='text-muted-foreground hover:text-foreground rounded-lg p-1'
+                >
+                  <span className='sr-only'>{item.name}</span>
+                  <item.icon aria-hidden='true' className='h-5 w-5' />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-  )
-}
+    )
+  }
+  
