@@ -1,5 +1,6 @@
 'use server'
 
+import React from 'react';
 import { z } from 'zod'
 import { Resend } from 'resend'
 import { ContactFormSchema, NewsletterFormSchema } from '@/lib/schemas'
@@ -24,7 +25,8 @@ export async function sendEmail(data: ContactFormInputs) {
       cc: ['contact@nikolas-t.io'],
       subject: 'Contact form submission',
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-      react: ContactFormEmail({ name, email, message })
+      // react: ContactFormEmail({ name, email, message })
+      react: React.createElement(ContactFormEmail, { name, email, message })
     })
 
     if (!data || error) {

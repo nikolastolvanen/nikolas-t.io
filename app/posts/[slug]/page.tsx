@@ -8,6 +8,12 @@ import { ArrowLeftIcon } from '@radix-ui/react-icons'
 import { notFound } from 'next/navigation'
 import NewsletterForm from '@/components/newsletter-form'
 
+// interface PostPageProps {
+//   params: { slug: string }
+// }
+
+type Params = Promise<{ slug: string }>
+
 export async function generateStaticParams() {
   const posts = await getPosts()
   const slugs = posts.map(post => ({ slug: post.slug }))
@@ -15,9 +21,12 @@ export async function generateStaticParams() {
   return slugs
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
+export default async function Post(props: { params: Params }) {
+  const params = await props.params
   const { slug } = params
   const post = await getPostBySlug(slug)
+
+  console.log('Post data:', post)
 
   if (!post) {
     notFound()
