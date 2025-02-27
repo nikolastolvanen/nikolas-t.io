@@ -4,6 +4,7 @@ import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
 
 import Counter from '@/components/counter'
 import Image from '@/components/image'
+import Link from 'next/link'
 
 interface CodeProps extends React.HTMLProps<HTMLElement> {
   children: string
@@ -17,7 +18,8 @@ function Code({ children, ...props }: CodeProps) {
 const components = {
   code: Code,
   Counter,
-  Image
+  Image,
+  Link
 }
 
 export default function MDXContent(

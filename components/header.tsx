@@ -19,9 +19,12 @@ const navItems = {
 
 export default function Header() {
   return (
-    <header className='inset-x-0 top-0 z-50 pb-6 md:pt-6'>
+    <header className='inset-x-0 top-0 z-50 md:pb-6 md:pt-6'>
       <nav className='container flex max-w-[720px] items-center justify-between pb-3 pt-3'>
-        <Link href='/' className='hidden shrink-0 text-primary md:block rounded-lg p-2'>
+        <Link
+          href='/'
+          className='hidden shrink-0 rounded-lg p-2 text-primary md:block'
+        >
           <svg
             width='20'
             height='20'
@@ -46,7 +49,7 @@ export default function Header() {
               <Link
                 key={path}
                 href={path}
-                className='relative m-1 flex px-2 py-1 rounded-lg align-middle text-sm transition-all hover:text-neutral-800 dark:hover:text-neutral-200'
+                className='relative m-1 flex rounded-lg py-1 align-middle text-sm transition-all hover:text-neutral-800 dark:hover:text-neutral-200 sm:px-2'
               >
                 {name}
               </Link>

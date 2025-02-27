@@ -11,13 +11,10 @@ export default async function About() {
               Hello! My name is Nikolas Tolvanen. I&#39;m from Joensuu, Finland.
             </p>
             <p className='py-2'>
-              I&#39;m studying computer science at the{' '}
-              <a href='https://www.uef.fi/en' target='_blank'>
-                <u>University of Eastern Finland</u>
-              </a>
-              . In my studies, I have learned about software development, data
-              science, data analytics, artificial intelligence, robotics, and
-              several other things.
+              I&#39;m studying computer science at the University of Eastern
+              Finland. In my studies, I have learned about software development,
+              data science, data analytics, artificial intelligence, robotics,
+              and several other things.
             </p>
             <p className='py-2'>
               Tech has been my interest for a long time. I enjoy coding as it is
@@ -26,18 +23,8 @@ export default async function About() {
             </p>
             <p className='py-2'>
               On my free time I like going to the gym and reading interesting
-              books. I&#39;m currently reading{' '}
-              <a
-                href='https://www.anupartanen.com/the-nordic-theory-of-everything/'
-                target='_blank'
-              >
-                <u>
-                  &quot;The Nordic Theory of Everything: In Search of a Better
-                  Life&quot;
-                </u>
-              </a>
-              . I have also started running as a new hobby this year and I&#39;m
-              hoping to run a marathon soon in the future.
+              books. I have also started running as a new hobby this year and
+              I&#39;m hoping to run a marathon soon in the future.
             </p>
           </div>
           <div className='invisible sm:visible'>
@@ -46,25 +33,25 @@ export default async function About() {
               src='/images/gallery/helsinki.jpg'
               alt='Nikolas in Helsinki'
               width={200}
-              height={175}
+              height={100}
               priority
             />
             <Image
-              className='absolute mt-[245px] flex-1 rotate-[-0.05rad] rounded-lg'
+              className='absolute mt-[260px] flex-1 rotate-[-0.05rad] rounded-lg'
               src='/images/gallery/uef.jpg'
               alt='University of Eastern Finland'
               width={300}
-              height={175}
+              height={100}
               priority
             />
-            <Image
+            {/* <Image
               className='absolute ml-[80px] mt-[395px] flex-1 rotate-[0.03rad] rounded-lg'
               src='/images/gallery/vaticancity.jpg'
               alt='Nikolas in Vatican City'
               width={200}
               height={175}
               priority
-            />
+            /> */}
           </div>
         </div>
       </div>
