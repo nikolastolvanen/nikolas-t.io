@@ -25,7 +25,7 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <ul className='font-sm flex flex-row space-x-4'>
+          <ul className='flex flex-row space-x-4'>
             <li>
               <a
                 className='flex items-center text-muted-foreground transition-all hover:text-foreground'

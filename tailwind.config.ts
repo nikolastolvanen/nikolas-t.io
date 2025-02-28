@@ -22,8 +22,6 @@ const config = {
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
-        //sans: ['var(--font-sans)', ...fontFamily.sans],
-        //serif: ['var(--font-serif)', ...fontFamily.serif]
       },
       colors: {
         border: 'hsl(var(--border))',

@@ -82,6 +82,16 @@
     @apply bg-background text-foreground;
   }
 
+  p {
+    font-size: 1.1rem;
+  }
+
+  @media (min-width: 640px) {
+    p {
+      font-size: 1rem;
+    }
+  }
+
   .title {
     @apply text-3xl font-bold decoration-border/75 decoration-2 underline-offset-8;
   }
