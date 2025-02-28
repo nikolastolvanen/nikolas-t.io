@@ -22,7 +22,7 @@ export function ThemeToggle() {
     <Button
       className='rounded-border-2 rounded-lg p-2'
       size='sm'
-      variant='ghost'
+      variant='icon'
       onClick={() => {
         setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
       }}

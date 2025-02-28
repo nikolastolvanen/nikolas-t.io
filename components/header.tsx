@@ -1,6 +1,8 @@
+'use client'
 import Link from 'next/link'
 import { ThemeToggle } from './theme-toggle'
 //import { Button } from '@/components/ui/button'
+import { usePathname } from 'next/navigation'
 
 const navItems = {
   '/': {
@@ -18,6 +20,8 @@ const navItems = {
 }
 
 export default function Header() {
+  const pathname = `/${usePathname().split('/')[1]}`
+
   return (
     <header className='inset-x-0 top-0 z-50 md:pb-6 md:pt-6'>
       <nav className='container flex max-w-[720px] items-center justify-between pb-3 pt-3'>
@@ -49,7 +53,11 @@ export default function Header() {
               <Link
                 key={path}
                 href={path}
-                className='relative m-1 flex rounded-lg py-1 align-middle text-sm transition-all hover:text-neutral-800 dark:hover:text-neutral-200 sm:px-2'
+                className={`${
+                  path === pathname
+                    ? 'text-primary underline underline-offset-2'
+                    : 'text-muted-foreground'
+                } "relative hover:text-foreground" m-1 flex rounded-lg py-1 align-middle text-sm transition-all sm:px-2`}
               >
                 {name}
               </Link>

@@ -28,7 +28,7 @@ export default function Footer() {
           <ul className='font-sm flex flex-row space-x-4'>
             <li>
               <a
-                className='flex items-center text-muted-foreground transition-all'
+                className='flex items-center text-muted-foreground transition-all hover:text-foreground'
                 rel='noopener noreferrer'
                 target='_blank'
                 href='/rss'
@@ -39,7 +39,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                className='flex items-center text-muted-foreground transition-all'
+                className='flex items-center text-muted-foreground transition-all hover:text-foreground'
                 rel='noopener noreferrer'
                 target='_blank'
                 href='https://github.com/nikolastolvanen/nikolas-t.io'
