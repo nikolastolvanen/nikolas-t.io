@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 //import { Inter, Playfair_Display } from 'next/font/google'
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
+import { Analytics } from '@vercel/analytics/react'
 
 import { cn } from '@/lib/utils'
 
@@ -27,17 +28,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body
-        className={cn(
-          'flex min-h-screen flex-col font-sans antialiased'
-        )}
-      >
+    <html
+      lang='en'
+      suppressHydrationWarning
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
+    >
+      <body className={cn('flex min-h-screen flex-col font-sans antialiased')}>
         <Providers>
           <Header />
           <main className='grow'>{children}</main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   )
