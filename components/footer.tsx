@@ -18,9 +18,9 @@ function ArrowIcon() {
 export default function Footer() {
   return (
     <footer className='py-8'>
-      <div className='container flex max-w-[720px] flex-row items-center space-x-10'>
+      <div className='container flex max-w-[720px] flex-row items-center justify-between space-x-10 sm:justify-start'>
         <div>
-          <p className='text-center text-sm leading-5 text-muted-foreground'>
+          <p className='text-sm leading-5 text-muted-foreground'>
             {new Date().getFullYear()} - Nikolas Tolvanen
           </p>
         </div>
