@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'nikolas-t.io',
     short_name: 'nikolas-t.io',
-    description: 'nikolas-t.io',
+    description: 'Nikolas porfolio website',
     start_url: '/',
     display: 'standalone',
     background_color: '#000',
