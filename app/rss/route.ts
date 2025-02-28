@@ -2,7 +2,7 @@ import { baseUrl } from 'app/sitemap'
 import { getProjects } from 'lib/projects'
 
 export async function GET() {
-  let allProjects = await getProjects()
+  const allProjects = await getProjects()
 
   const itemsXml = allProjects
     .sort((a, b) => {
