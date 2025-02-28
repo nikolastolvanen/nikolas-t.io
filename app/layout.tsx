@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-//import { Inter, Playfair_Display } from 'next/font/google'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/react'
@@ -11,12 +10,6 @@ import './globals.css'
 import Providers from '@/components/providers'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
-
-//const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
-//const playfair = Playfair_Display({
-//  subsets: ['latin'],
-//  variable: '--font-serif'
-//})
 
 export const metadata: Metadata = {
   title: 'Nikolas Tolvanen',
