@@ -77,19 +77,10 @@
 @layer base {
   * {
     @apply border-border;
+    font-size: 1.02rem;
   }
   body {
     @apply bg-background text-foreground;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-
-  @media (min-width: 640px) {
-    p {
-      font-size: 1rem;
-    }
   }
 
   .title {
