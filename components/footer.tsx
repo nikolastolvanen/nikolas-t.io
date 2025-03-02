@@ -21,7 +21,7 @@ function LinkIcon() {
 export default function Footer() {
   return (
     <footer className='py-8'>
-      <div className='container flex max-w-[720px] flex-row items-end justify-between sm:items-center sm:justify-start sm:space-x-16'>
+      <div className='container flex max-w-[720px] flex-row items-end justify-between sm:items-center sm:space-x-16'>
         <div>
           <p className='text-sm leading-5 text-muted-foreground'>
             {new Date().getFullYear()} - Nikolas Tolvanen
