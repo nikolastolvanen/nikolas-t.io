@@ -24,7 +24,7 @@ export default async function About() {
             <p className='py-2'>
               On my free time I like going to the gym and reading interesting
               books. I have also started running as a new hobby this year and
-              I&#39;m hoping to run a marathon soon in the future.
+              I&#39;m hoping to run a half marathon soon.
             </p>
           </div>
           <div className='flex flex-row sm:flex-col'>
