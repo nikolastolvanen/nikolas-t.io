@@ -1,6 +1,3 @@
-//import Image from 'next/image'
-//import authorImage from '@/public/images/authors/hamed.png'
-
 export default function Intro() {
   return (
     <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 pb-2 md:flex-row md:items-center'>
