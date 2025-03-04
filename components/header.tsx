@@ -55,9 +55,9 @@ export default function Header() {
                 href={path}
                 className={`${
                   path === pathname
-                    ? 'text-primary underline underline-offset-4'
+                    ? 'bg-secondary text-primary underline-offset-4'
                     : 'text-muted-foreground'
-                } "relative hover:text-foreground" m-1 flex rounded-lg py-1 align-middle text-sm transition-all sm:px-2`}
+                } "relative hover:text-foreground" flex rounded-lg px-3 py-1.5 align-middle text-sm transition-all sm:px-2`}
               >
                 {name}
               </Link>
