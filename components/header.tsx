@@ -47,7 +47,7 @@ export default function Header() {
           </svg>
         </Link>
 
-        <div className='flex flex-row gap-1'>
+        <div className='flex flex-row'>
           {Object.entries(navItems).map(([path, { name }]) => {
             return (
               <Link
@@ -57,7 +57,7 @@ export default function Header() {
                   path === pathname
                     ? 'bg-secondary text-primary underline-offset-4'
                     : 'text-muted-foreground'
-                } "relative hover:text-foreground" flex rounded-lg px-3 py-1.5 align-middle text-sm transition-all sm:px-2`}
+                } "relative hover:text-foreground" flex rounded-lg px-2 py-1.5 align-middle text-sm transition-all sm:px-3`}
               >
                 {name}
               </Link>
